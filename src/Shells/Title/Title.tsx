@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-type Props = {
+interface Props {
     title: string
 }
 
-export default function Title({ title }: Props) {
+const Title: FC<Props> = ({ title }: Props) => {
     return (
         <header className="bg-white shadow">
             <div className="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
@@ -13,3 +13,5 @@ export default function Title({ title }: Props) {
         </header>
     )
 }
+
+export default Title

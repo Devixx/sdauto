@@ -1,8 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-type Props = {}
-
-export default function Divider({ }: Props) {
+const Divider: FC = () => {
     return (
         <>
             <div className="h-2 rounded-xl border-b-2 my-3 border-solid border-blue" />
@@ -10,3 +8,5 @@ export default function Divider({ }: Props) {
         </>
     )
 }
+
+export default Divider

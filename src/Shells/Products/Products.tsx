@@ -1,3 +1,5 @@
+import React, { FC } from 'react'
+
 const products = [
     {
         id: 1,
@@ -5,7 +7,7 @@ const products = [
         href: '#',
         price: '$48',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
-        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.'
     },
     {
         id: 2,
@@ -13,7 +15,7 @@ const products = [
         href: '#',
         price: '$35',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
-        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.'
     },
     {
         id: 3,
@@ -21,12 +23,12 @@ const products = [
         href: '#',
         price: '$89',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
-        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-    },
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.'
+    }
     // More products...
 ]
 
-export default function Products() {
+const Products: FC = () => {
     return (
         <div className="bg-white">
             <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -51,3 +53,5 @@ export default function Products() {
         </div>
     )
 }
+
+export default Products

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-type Props = {}
-
-export default function Footer({ }: Props) {
+const Footer: FC = () => {
     return (
         <div>Footer</div>
     )
 }
+
+export default Footer

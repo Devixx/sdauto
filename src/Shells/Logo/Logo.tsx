@@ -1,9 +1,7 @@
-import React from 'react'
-import logo from '../../assets/sdlogo.png';
+import React, { FC } from 'react'
+import logo from '../../assets/sdlogo.png'
 
-type Props = {}
-
-export default function Logo({ }: Props) {
+const Logo: FC = () => {
     return (
         <div className="flex items-center gap-2">
             <img
@@ -15,3 +13,5 @@ export default function Logo({ }: Props) {
         </div>
     )
 }
+
+export default Logo

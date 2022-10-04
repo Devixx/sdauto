@@ -1,12 +1,12 @@
-import React from 'react'
-import banner from "../../assets/SDbanner.png"
+import React, { FC } from 'react'
+import banner from '../../assets/SDbanner.png'
 
-type Props = {}
-
-export default function Banner({ }: Props) {
+const Banner: FC = () => {
     return (
         <div>
             <img src={banner} alt="Banner" />
         </div>
     )
 }
+
+export default Banner

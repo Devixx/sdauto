@@ -1,3 +1,5 @@
+
+import React, { FC } from 'react'
 import { BoltIcon, ChatBubbleBottomCenterTextIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
 
 const features = [
@@ -5,29 +7,29 @@ const features = [
         name: 'Competitive exchange rates',
         description:
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: GlobeAltIcon,
+        icon: GlobeAltIcon
     },
     {
         name: 'No hidden fees',
         description:
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: ScaleIcon,
+        icon: ScaleIcon
     },
     {
         name: 'Transfers are instant',
         description:
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: BoltIcon,
+        icon: BoltIcon
     },
     {
         name: 'Mobile notifications',
         description:
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: ChatBubbleBottomCenterTextIcon,
-    },
+        icon: ChatBubbleBottomCenterTextIcon
+    }
 ]
 
-export default function Example() {
+const Descriptions: FC = () => {
     return (
         <div className="bg-white py-12">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -61,3 +63,5 @@ export default function Example() {
         </div>
     )
 }
+
+export default Descriptions

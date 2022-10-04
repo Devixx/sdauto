@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-type Props = {
+interface Props {
     children: any
 }
 
-export default function Container({ children }: Props) {
+const Container: FC<Props> = ({ children }: Props) => {
     return (
         <main>
             <div className="mx-auto max-w-7xl py-6">
@@ -19,3 +19,5 @@ export default function Container({ children }: Props) {
         </main>
     )
 }
+
+export default Container

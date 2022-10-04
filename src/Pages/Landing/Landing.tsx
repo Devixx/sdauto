@@ -3,19 +3,18 @@ import { Divider, Layout } from '../../Components'
 import { Descriptions, Products } from '../../Shells'
 import Banner from '../../Shells/Banner/Banner'
 
-type Props = {}
+// interface Props {children: any}
 
-export default function Landing({ }: Props) {
-    return (
-        <div>
-            <Layout>
-                <Banner />
-                <Divider />
-                {/* <div>Landing</div> */}
-                <Descriptions />
-                <Divider />
-                <Products />
-            </Layout>
-        </div>
-    )
+export default function Landing(): any {
+	return (
+		<div>
+			<Layout>
+				<Banner />
+				<Divider />
+				{/* <div>Landing</div> */}
+				<Descriptions />
+				<Divider />
+				<Products />
+			</Layout>
+		</div>)
 }

@@ -1,8 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-type Props = {}
-
-export default function Socials({ }: Props) {
+const Socials: FC = () => {
   return (
     <div className="sidebar">
       <div className="social facebook">
@@ -23,3 +21,5 @@ export default function Socials({ }: Props) {
     </div>
   )
 }
+
+export default Socials
