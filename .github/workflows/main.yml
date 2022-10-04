@@ -5,6 +5,16 @@ name: s3-depl
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version'
+        required: true
+        type: string
+      skip-tests:
+        description: 'Skip tests'
+        required: false
+        type: boolean
   push:
     branches: [ master ]
 
