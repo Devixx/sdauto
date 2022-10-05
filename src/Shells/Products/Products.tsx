@@ -1,28 +1,32 @@
 import React, { FC } from 'react'
+import { coc, controletechnique, immatriculation } from '../../assets'
 
 const products = [
     {
         id: 1,
-        name: 'Earthen Bottle',
+        name: 'Immatriculation',
         href: '#',
-        price: '$48',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
+        oldPrice: '100€',
+        price: '80€',
+        imageSrc: immatriculation,
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.'
     },
     {
         id: 2,
-        name: 'Nomad Tumbler',
+        name: 'Controle Technique',
         href: '#',
-        price: '$35',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
+        oldPrice: '90€',
+        price: '70€',
+        imageSrc: controletechnique,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.'
     },
     {
         id: 3,
-        name: 'Focus Paper Refill',
+        name: 'Certificat de conformité (COC)',
         href: '#',
-        price: '$89',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
+        oldPrice: '120€',
+        price: '100€',
+        imageSrc: coc,
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.'
     }
     // More products...
@@ -46,6 +50,7 @@ const Products: FC = () => {
                             </div>
                             <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
                             <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                            <p className="mt-1 text-md font-medium text-red-900 line-through">{product.oldPrice}</p>
                         </a>
                     ))}
                 </div>

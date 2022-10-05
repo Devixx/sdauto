@@ -1,31 +1,25 @@
 
 import React, { FC } from 'react'
-import { BoltIcon, ChatBubbleBottomCenterTextIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
+import { BoltIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
 
 const features = [
     {
-        name: 'Competitive exchange rates',
+        name: 'Immatriculation',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            'Certificat d’immatriculation (carte grise) \n Plaques d’immatriculation',
         icon: GlobeAltIcon
     },
     {
-        name: 'No hidden fees',
+        name: 'Contrôle technique',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            'Présentation de vos véhicules au centre de contrôle technique (SNCT)',
         icon: ScaleIcon
     },
     {
-        name: 'Transfers are instant',
+        name: 'Certificat de Conformite Europeene',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            'Nous vous offrons des Certificats de conformité pour: 54 marques de véhicules particuliers, 23 marques de véhicules utilitaires, 18 marques de motos',
         icon: BoltIcon
-    },
-    {
-        name: 'Mobile notifications',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: ChatBubbleBottomCenterTextIcon
     }
 ]
 
@@ -34,18 +28,17 @@ const Descriptions: FC = () => {
         <div className="bg-white py-12">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="lg:text-center">
-                    <h2 className="text-lg font-semibold text-indigo-600">Transactions</h2>
+                    <h2 className="text-lg font-semibold text-indigo-600">Services</h2>
                     <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-                        A better way to send money
+                        Une meilleur façon pour gérer vos paperasses
                     </p>
                     <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-                        accusamus quisquam.
+                        Société spécialisée dans l’immatriculation et le passage au contrôle technique de vos véhicules au Grand-Duché de Luxembourg.
                     </p>
                 </div>
 
                 <div className="mt-10">
-                    <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
+                    <dl className="space-y-10 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 md:space-y-0">
                         {features.map((feature) => (
                             <div key={feature.name} className="relative">
                                 <dt>

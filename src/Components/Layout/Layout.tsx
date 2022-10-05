@@ -9,7 +9,7 @@ export default function Layout({ children }: Props): any {
 	return (
 		<div>
 			<Header />
-			<Title title='Dashboard' />
+			<Title title='' />
 			<Container >
 				{children}
 			</Container>

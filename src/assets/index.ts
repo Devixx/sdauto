@@ -1,0 +1,5 @@
+export { default as banner } from './SDbanner.png'
+export { default as logo } from './sdlogo.png'
+export { default as coc } from './coc.png'
+export { default as immatriculation } from './immatriculation.png'
+export { default as controletechnique } from './controletechnique.png'
