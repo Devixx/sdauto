@@ -18,7 +18,7 @@ const features = [
     {
         name: 'Certificat de Conformite Europeene',
         description:
-            'Nous vous offrons des Certificats de conformité pour: 54 marques de véhicules particuliers, 23 marques de véhicules utilitaires, 18 marques de motos',
+            'Des Certificats de conformité pour plusieurs marques de véhicules particuliers et utilitaires',
         icon: BoltIcon
     }
 ]
@@ -28,11 +28,11 @@ const Descriptions: FC = () => {
         <div className="bg-white py-12">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="lg:text-center">
-                    <h2 className="text-lg font-semibold text-indigo-600">Services</h2>
+                    <h2 className="text-xl font-semibold text-indigo-600 py-10">Services</h2>
                     <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                         Une meilleur façon pour gérer vos paperasses
                     </p>
-                    <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto py-10">
                         Société spécialisée dans l’immatriculation et le passage au contrôle technique de vos véhicules au Grand-Duché de Luxembourg.
                     </p>
                 </div>
@@ -40,7 +40,7 @@ const Descriptions: FC = () => {
                 <div className="mt-10">
                     <dl className="space-y-10 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 md:space-y-0">
                         {features.map((feature) => (
-                            <div key={feature.name} className="relative">
+                            <div key={feature.name} className="relative border rounded-md p-5">
                                 <dt>
                                     <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
                                         <feature.icon className="h-6 w-6" aria-hidden="true" />

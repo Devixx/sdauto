@@ -4,6 +4,6 @@ import { Footer } from '../../Shells'
 
 test('renders learn footer inner text', () => {
     render(<Footer />)
-    const footer = screen.getByText(/Footer/i)
+    const footer = screen.getByText(/Copyright/i)
     expect(footer).toBeInTheDocument()
 })

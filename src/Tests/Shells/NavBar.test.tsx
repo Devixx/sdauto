@@ -4,6 +4,6 @@ import { NavBar } from '../../Shells'
 
 test('renders learn navbar inner text', () => {
     render(<NavBar />)
-    const dashboard = screen.getByText(/Dashboard/i)
+    const dashboard = screen.getByText(/COC/i)
     expect(dashboard).toBeInTheDocument()
 })

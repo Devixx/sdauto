@@ -4,6 +4,6 @@ import { Layout } from '../../Components'
 
 test('renders learn footer header and socials in layout', () => {
     render(<Layout />)
-    const footer = screen.getByText(/Footer/i)
+    const footer = screen.getByText(/Certificat/i)
     expect(footer).toBeInTheDocument()
 })

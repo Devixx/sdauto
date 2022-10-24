@@ -1,7 +1,7 @@
 export const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
-    { name: 'Reports', href: '#', current: false }
+    { name: 'Accueil', href: '#', current: true },
+    { name: 'Controle Techinique', href: '#', current: false },
+    { name: 'Immatriculation', href: '#', current: false },
+    { name: 'Certificat de Conformité (COC)', href: '#', current: false },
+    { name: 'Contact', href: '#', current: false }
 ]
