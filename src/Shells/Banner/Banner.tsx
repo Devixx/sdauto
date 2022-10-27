@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
-import { banner } from '../../assets'
+import { BannerImg } from '../../assets'
 
 const Banner: FC = () => {
     return (
         <div>
-            <img src={banner} alt="Banner" />
+            <img src={BannerImg} alt="Banner" />
         </div>
     )
 }

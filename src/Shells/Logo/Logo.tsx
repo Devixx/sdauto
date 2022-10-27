@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
-import { logo } from '../../assets'
+import { LogoImg } from '../../assets'
 
 const Logo: FC = () => {
     return (
         <div className="flex items-center gap-2">
             <img
                 className="h-8 w-8"
-                src={logo}
+                src={LogoImg}
                 alt="Your Company"
             />
             <h2 className='font-bold'>SD automobile</h2>

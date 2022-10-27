@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { coc, controletechnique, immatriculation } from '../../assets'
+import { CocImg, CTImg, ImmatImg } from '../../assets'
 
 const products = [
     {
@@ -8,7 +8,7 @@ const products = [
         href: '#',
         oldPrice: '100€',
         price: '80€',
-        imageSrc: immatriculation,
+        imageSrc: ImmatImg,
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.'
     },
     {
@@ -17,16 +17,16 @@ const products = [
         href: '#',
         oldPrice: '90€',
         price: '70€',
-        imageSrc: controletechnique,
+        imageSrc: CTImg,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.'
     },
     {
         id: 3,
         name: 'Certificat de conformité (COC)',
         href: '#',
-        oldPrice: '120€',
-        price: '100€',
-        imageSrc: coc,
+        oldPrice: '',
+        price: 'Sur commande',
+        imageSrc: CocImg,
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.'
     }
     // More products...

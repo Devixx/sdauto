@@ -15,6 +15,7 @@ export default function Landing(): any {
 				<Descriptions />
 				<Divider />
 				<Products />
+				<Divider />
 			</Layout>
 		</div>)
 }
